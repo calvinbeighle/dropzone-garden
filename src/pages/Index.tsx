@@ -1,11 +1,19 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import FileUpload from '@/components/FileUpload';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-gray-50 to-gray-100 p-4">
+      <div className="w-full max-w-4xl">
+        <div className="text-center mb-12 space-y-2">
+          <h1 className="text-4xl font-medium tracking-tight">
+            File Upload
+          </h1>
+          <p className="text-lg text-gray-600">
+            Drag and drop your files to begin uploading
+          </p>
+        </div>
+        <FileUpload />
       </div>
     </div>
   );
